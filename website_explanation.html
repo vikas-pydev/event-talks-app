@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Your Website Works: A Visual Guide</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 2rem;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .header p {
+            margin: 0;
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 2rem;
+        }
+        .section {
+            margin-bottom: 2.5rem;
+        }
+        .section h2 {
+            font-size: 2rem;
+            color: #a777e3;
+            border-bottom: 3px solid #6e8efb;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .analogy {
+            background-color: #f7f9fc;
+            border-left: 5px solid #6e8efb;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 0 8px 8px 0;
+        }
+        .analogy-title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #6e8efb;
+            margin-bottom: 0.5rem;
+        }
+        .diagram {
+            background-color: #2d3748;
+            color: #f7fafc;
+            padding: 1.5rem;
+            border-radius: 8px;
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre;
+            overflow-x: auto;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .diagram .actor {
+            color: #a777e3;
+        }
+        .diagram .arrow {
+            color: #63b3ed;
+        }
+        .diagram .comment {
+            color: #90cdf4;
+            font-style: italic;
+        }
+        code {
+            background-color: #e2e8f0;
+            padding: 0.2em 0.4em;
+            margin: 0;
+            font-size: 0.9em;
+            border-radius: 3px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>How Your Website Works</h1>
+            <p>A Visual Guide Using a Restaurant Analogy</p>
+        </div>
+        <div class="content">
+
+            <div class="section">
+                <h2>The Big Picture</h2>
+                <div class="analogy">
+                    <p><span class="analogy-title">The Customer:</span> You, wanting to see the event schedule.</p>
+                    <p><span class="analogy-title">The Waiter:</span> Your Web Browser (Chrome, Firefox, etc.).</p>
+                    <p><span class="analogy-title">The Kitchen:</span> The Node.js Server (running your <code>server.js</code> code).</p>
+                    <p><span class="analogy-title">The Ingredients:</span> Your code files (<code>.html</code>, <code>.css</code>, <code>.js</code>).</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>1. The Request: You Ask for the Website</h2>
+                <p>You open your browser and go to <code>http://localhost:3000</code>. This is like walking into the restaurant and asking for the menu.</p>
+                <div class="diagram">
+<span class="actor">[Your Browser (Waiter)]</span>
+    <span class="arrow">----------------------------------&gt;</span> <span class="actor">[Node.js Server (Kitchen)]</span>
+    <span class="comment">"Hey, I'd like the website at this address!"</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>2. The Kitchen Gets to Work: <code>server.js</code></h2>
+                <p>The <code>server.js</code> file is the chef, always listening for orders. When your request arrives, it prepares the meal.</p>
+                
+                <h4>A) It grabs the main plate (<code>index.html</code>).</h4>
+                <p>This is the basic structure of your website, the empty plate.</p>
+                <div class="diagram">
+<span class="actor">[Node.js Server]</span> <span class="arrow">--&gt;</span> <span class="actor">[index.html file]</span> <span class="comment">"I need the main plate."</span>
+                </div>
+
+                <h4>B) It adds the styling and interactivity.</h4>
+                <p>The server also fetches the files linked inside <code>index.html</code> to make the website look good and work correctly.</p>
+                <ul>
+                    <li><code>style.css</code>: The <strong>Garnish</strong>. This adds all the colors, fonts, and layout.</li>
+                    <li><code>script.js</code>: The <strong>Magic Sauce</strong>. This adds all the interactive features.</li>
+                </ul>
+                 <div class="diagram">
+<span class="actor">[Node.js Server]</span> <span class="arrow">--&gt;</span> <span class="actor">[style.css & script.js]</span> <span class="comment">"I need the garnish & sauce!"</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>3. Serving the Meal: The Website Appears</h2>
+                <p>The server sends all these assembled files back to your browser. The browser then renders them into the final, complete webpage you see on your screen.</p>
+                <div class="diagram">
+<span class="actor">[Your Browser (Waiter)]</span>
+    <span class="arrow">&lt;----------------------------------</span> <span class="actor">[Node.js Server (Kitchen)]</span>
+    <span class="comment">"Here is your complete, beautiful website!"</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>4. The Magic Sauce: How <code>script.js</code> Works</h2>
+                <p>This is where the interactivity happens, right inside your browser!</p>
+
+                <h4>A) Getting the Talk Data</h4>
+                <p>As soon as the page loads, <code>script.js</code> asks the server for the list of talks. The server provides this data as JSON.</p>
+                <div class="diagram">
+<span class="actor">[script.js in Browser]</span> <span class="arrow">--&gt;</span> <span class="actor">[Node.js Server]</span> <span class="comment">"Can I get the list of talks?"</span>
+                </div>
+
+                <h4>B) Building the Schedule & Filtering</h4>
+                <p><code>script.js</code> takes this data and builds the HTML for the schedule. When you type in the search bar, it doesn't need to talk to the server again. It just:</p>
+                <ol>
+                    <li>Looks at the list of talks it already has.</li>
+                    <li>Filters the list based on your search term.</li>
+                    <li>Quickly re-draws the schedule on the page with only the matching talks.</li>
+                </ol>
+                <p>This is why the search is so fast!</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
