@@ -1,0 +1,73 @@
+<div align="center">
+
+# <a href="#" style="color: #6e8efb; text-decoration: none;">🚀 Event Talks App 🚀</a>
+
+</div>
+
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3Q1bHR2eDNsZ3U4N3J6YmY5a3ZpY2s3eDRuN2NqNTl6cW52bXNnZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l49JXRl3QJg7gZ94s/giphy.gif" alt="Animated code on a screen" width="600">
+</p>
+
+<p align="center">
+  A sleek, single-page website for a one-day tech conference. Built with a lightweight Node.js backend and a clean, interactive frontend.
+</p>
+
+---
+
+### <p align="center" style="color: #a777e3;">🛠️ Technologies Used</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+</p>
+
+---
+
+### <p align="center" style="color: #a777e3;">✨ Features</p>
+
+<div align="center">
+
+| Feature             | Description                                                                   |
+| ------------------- | ----------------------------------------------------------------------------- |
+| **📅 Full Schedule**  | Displays the entire day's schedule with timings, talks, and breaks.           |
+| **🔍 Live Search**    | Instantly filter talks by category with a responsive search bar.              |
+| **🌐 Lightweight**    | Built with standard, no-framework libraries for a fast and simple experience. |
+
+</div>
+
+---
+
+### <p align="center" style="color: #a777e3;">🏃‍♀️ How to Run</p>
+
+<div align="center">
+
+1.  **Navigate to the directory:**
+    ```bash
+    cd tech-event-website
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Start the server:**
+    ```bash
+    npm start
+    ```
+
+4.  **Open in your browser:** `http://localhost:3000`
+
+</div>
+
+---
+
+### <p align="center" style="color: #a777e3;">📚 Detailed Documentation</p>
+
+<p align="center">
+  For a deep dive into how this project works, check out the detailed explanation document!
+  <br>
+  <a href="website_explanation.html"><strong>View the Full Explanation</strong></a>
+</p>
