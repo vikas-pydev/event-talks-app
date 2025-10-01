@@ -5,7 +5,7 @@
 </div>
 
 <p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3Q1bHR2eDNsZ3U4N3J6YmY5a3ZpY2s3eDRuN2NqNTl6cW52bXNnZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l49JXRl3QJg7gZ94s/giphy.gif" alt="Animated code on a screen" width="600">
+  <img src="assets/AI_Generated_GIF_with_Gemini_CLI.gif" alt="Animated code on a screen" width="600">
 </p>
 
 <p align="center">
